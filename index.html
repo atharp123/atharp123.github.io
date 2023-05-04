@@ -157,23 +157,15 @@ I wanted to investigate the relationship between a movie or TV show's country of
   
   <h3>Code Example</h3>
   <pre>
-1.	import pandas as pd
-# Read the dataset
-df = pd.read_csv('netflix_data.csv')
-2.	# Remove rows with missing values
-df = df.dropna(subset=['title', 'director', 'cast', 'country', 'date_added', 'rating', 'duration', 'genre', 'description'])
+1.  df = pd.read_csv('netflix_data.csv')
 
-# Remove irrelevant columns if any (optional)
-# df = df.drop(columns=['irrelevant_column_name'])
-3.	# Convert 'date_added' to datetime
-df['date_added'] = pd.to_datetime(df['date_added'])
+2.	df = df.dropna(subset=['title', 'director', 'cast', 'country', 'date_added', 'rating', 'duration', 'genre', 'description'])
 
-# Convert 'rating' to numeric (if it's not already)
-# df['rating'] = pd.to_numeric(df['rating'])
-4.	# Create a new column 'year_added' by extracting the year from 'date_added'
-df['year_added'] = df['date_added'].dt.year
+3.	df['date_added'] = pd.to_datetime(df['date_added'])
+
+4.	df['year_added'] = df['date_added'].dt.year
+
 5.	df.to_csv('cleaned_netflix_data.csv', index=False)
-
   </pre>
   <p>In this analysis, I selected specific columns of data encompassing all countries from the dataset, and subsequently generated three pivot charts
     to clarify the distinct variations in viewers' preferences over the years. 
