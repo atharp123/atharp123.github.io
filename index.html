@@ -1,13 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My GitHub Page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Analysis Project</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    h1, h2 {
+      color: #333;
+    }
+    pre {
+      background-color: #f5f5f5;
+      padding: 10px;
+      overflow-x: auto;
+    }
+  </style>
 </head>
 <body>
-    <h1>Hello, World!</h1>
-    <p>This is my GitHub Pages website.</p>
+  <h1>Data Analysis Project</h1>
+
+  <h2>Data Tools</h2>
+  <p>
+    In the Data Tools module, I feel like I gained an insight into data organization and experience in handling various data sets...
+    <!-- Add the rest of the content -->
+  </p>
+
+  <h2>Big Data</h2>
+  <p>
+    In the Big Data module, this module starts of by investigating the era of big data, its sources, and the challenges it presents...
+    <!-- Add the rest of the content -->
+  </p>
+
+  <h2>Biases in Machine Learning</h2>
+  <p>
+    In the Biases in Machine Learning module, I gained a comprehensive understanding of the impact of biases on various aspects...
+    <!-- Add the rest of the content -->
+  </p>
+
+  <h2>Unit Test</h2>
+  <p>
+    I successfully completed the final unit exam which covered the areas of Data Tools, Big Data, and Bias in Machine Learning...
+    <!-- Add the rest of the content -->
+  </p>
+
+  <h2>Final Project</h2>
+  <ol>
+    <li><strong>Choose a specific data set that you will use for this project</strong></li>
+    <p>
+      For my final project, I wanted to see the correlation in users of the video streaming service Netflix...
+      <!-- Add the rest of the content -->
+    </p>
+  </ol>
+  
+  <h2>Data Cleaning</h2>
+  <p>To help clean the data and create charts, I used tools in Excel.</p>
+  <p>
+    My first step was data cleaning and preparation by removing any irrelevant information and making sure the numerical characters for the data were correct for my needs. I used Python in conjunction with the .CSV data set to remove any duplicated data or irrelevant data.
+  </p>
+  
+  <h3>Code Example</h3>
+  <pre>
+import pandas as pd
+# Read the dataset
+df = pd.read_csv('netflix_data.csv')
+
+# Remove rows with missing values
+df = df.dropna(subset=['title', 'director', 'cast', 'country', 'date_added', 'rating', 'duration', 'genre', 'description'])
+  </pre>
 </body>
 </html>
-
