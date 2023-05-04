@@ -5,6 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Data Analysis Project</title>
   <style>
+    .gradient-title {
+      font-family: Arial, sans-serif;
+      font-size: 36px;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 20px;
+      background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+      -webkit-background-clip: text;
+      color: transparent;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+      animation: gradient 5s ease infinite;
+    }
+    @keyframes gradient {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
     .scaled-image {
       width: 80%;
       height: auto;
@@ -26,7 +43,7 @@
   </style>
 </head>
 <body>
-  <h1 style="font-family: Arial, sans-serif; font-size: 36px; font-weight: bold; color: #3c3c3c; text-align: center; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); margin-bottom: 20px;">Data Analysis Project</h1>
+  <h1 class="gradient-title">Data Analysis Project</h1>
 
 
   <h2>Data Tools</h2>
@@ -137,7 +154,9 @@ df['year_added'] = df['date_added'].dt.year
 <h3>Netflix Analysis 2019/2020/2021 results</h3>
   
 <img src="https://github.com/atharp123/atharp123.github.io/blob/main/TotalNetflix2019.png?raw=true" alt="Total Netflix 2019" class="scaled-image" />
-<img src="https://github.com/atharp123/atharp123.github.io/blob/main/Totalnetflix2020.png?raw=true" alt="Total Netflix 2020" class+"scaled-image" />
+<img src="https://github.com/atharp123/atharp123.github.io/blob/main/Totalnetflix2020.png?raw=true" alt="Total Netflix 2020" class="scaled-image" />
+<img src="https://github.com/atharp123/atharp123.github.io/blob/main/TotalNetflix2021.png?raw=true" alt="Total Netflix 2021" class="scaled-image" />
+
 
 
 
